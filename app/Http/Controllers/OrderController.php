@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\OrderCreated;
 use Illuminate\Http\Request;
 use App\Service\OrderService;
 
@@ -40,7 +41,8 @@ class OrderController extends Controller
             'total_price' => 'required'
         ]);
 
-        $this->orderService->storeOrder($formFields);
+        $order = $this->orderService->storeOrder($formFields);
+        event(new OrderCreated($order));
 
         return redirect('/');
     }
