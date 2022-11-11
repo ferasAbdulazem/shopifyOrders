@@ -34,4 +34,16 @@ class ShopifyController extends Controller
 
         return response()->json(compact("success"));
     }
+
+
+    public function register()
+    {
+        $isSuccessful =  $this->shopifyService->subscribeOrderCreated();
+
+        if (!$isSuccessful) {
+            return response('registration failed, look in logs for details', 500);
+        }
+
+        return response('registered successfully!');
+    }
 }
