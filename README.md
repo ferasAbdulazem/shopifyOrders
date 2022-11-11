@@ -1,7 +1,9 @@
 # Vehicle Rental
 
 -   **By:** Feras Abdulazem <feras.abdulazem@gmail.com>
--   **URL:** TBA
+-   **URLs:**
+    -   Laravel-App: https://wb-laravel.ferasdev.com
+    -   Shopify-Store: https://wb-store.ferasdev.com
 
 ## Requirements
 
@@ -67,3 +69,7 @@ if you need more help take a look at documentation for the flowing libraries:
 -   and the Shopify REST-API [client](https://github.com/Shopify/shopify-api-php) for php
 
 It's also recommended to use the Shopify [Partner Program](https://www.shopify.com/de/partners) to create a free store for testing purposes
+
+## Server
+
+hosted on a [Contabo VPS](https://contabo.com/de/vps/)
