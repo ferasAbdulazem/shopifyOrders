@@ -56,9 +56,10 @@ php artisan serve
 php artisan migrate
 ```
 
-## Server
+## Known Problems
 
-TBA
+-   Shopify Webhooks: I started setting up the to register Webhooks in Shopify. However at the moment the Shopify client lip
+    (shopify-api-php) throws a PHP exception while trying to register them.
 
 ## Help
 
