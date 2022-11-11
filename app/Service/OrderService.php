@@ -36,8 +36,15 @@ class OrderService
         return $orders;
     }
 
+
+    /**
+     * store an order to the DB
+     *
+     * @param $orderData
+     * @return Order
+     */
     public function storeOrder($orderData)
     {
-        Order::create($orderData);
+        return  Order::create($orderData);
     }
 }
