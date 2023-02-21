@@ -38,7 +38,7 @@ class ShopifyService
         $response = Registry::register(
             '/shopify/storeOrder',
             Topics::ORDERS_CREATE,
-            "https://wb-store.ferasdev.com/",
+            "wb-store.ferasdev.com",
             $_ENV["SHOPIFY_ACCESS_TOKEN"],
         );
 

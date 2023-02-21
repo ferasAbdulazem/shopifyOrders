@@ -32,11 +32,15 @@ class AppServiceProvider extends ServiceProvider
             $_ENV['SHOPIFY_API_KEY'],
             $_ENV['SHOPIFY_API_SECRET'],
             $_ENV['SHOPIFY_APP_SCOPES'],
-            $_ENV['SHOPIFY_APP_HOST_NAME'],
+            "https://wb-store.ferasdev.com",
             new FileSessionStorage('/tmp/php_sessions'),
             $_ENV['SHOPIFY_API_VERSION'],
             true,
             false,
+            null,
+            "",
+            null,
+            ["ferasdev.com"]
         );
     }
 }
