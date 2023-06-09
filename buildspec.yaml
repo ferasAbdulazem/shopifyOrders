@@ -5,7 +5,7 @@ phases:
     on-failure: CONTINUE
     runtime-versions:
       php: 8.1
-      nodejs: 16.x
+      nodejs: 14.x
     commands:
       - apt-get update -y
       - apt-get install -y libpq-dev libzip-dev
