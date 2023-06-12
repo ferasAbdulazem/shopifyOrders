@@ -13,11 +13,11 @@ phases:
       - curl -sS https://getcomposer.org/installer -o composer-setup.php
       - php composer-setup.php --install-dir=/usr/local/bin --filename=composer
   pre_build:
-    on-failure: CONTINUE
+    on-failure: ABORT
     commands:
-      - composer install
+      - cp .env.example .env
       - npm install
-      - mv .env.example .env
+      - composer install
   build:
     on-failure: ABORT
     commands:
