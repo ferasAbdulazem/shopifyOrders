@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
             'SHOPIFY_APP_SCOPES',
             "https://wb-store.ferasdev.com",
             new FileSessionStorage('/tmp/php_sessions'),
-            'SHOPIFY_API_VERSION',
+            '2023-04',
             true,
             false,
             null,
