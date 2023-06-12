@@ -29,12 +29,12 @@ class AppServiceProvider extends ServiceProvider
         Model::unguard();
 
         Context::initialize(
-            $_ENV['SHOPIFY_API_KEY'],
-            $_ENV['SHOPIFY_API_SECRET'],
-            $_ENV['SHOPIFY_APP_SCOPES'],
+            'SHOPIFY_API_KEY',
+            'SHOPIFY_API_SECRET',
+            'SHOPIFY_APP_SCOPES',
             "https://wb-store.ferasdev.com",
             new FileSessionStorage('/tmp/php_sessions'),
-            $_ENV['SHOPIFY_API_VERSION'],
+            'SHOPIFY_API_VERSION',
             true,
             false,
             null,
