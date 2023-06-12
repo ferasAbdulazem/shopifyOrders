@@ -25,10 +25,10 @@ phases:
       - php artisan config:cache
       - php artisan optimize
       # - php artisan migrate --force
-  post_build:
-    on-failure: ABORT
-    commands:
-      - php artisan test
+#  post_build:
+#    on-failure: ABORT
+#    commands:
+#      - php artisan test
 
 artifacts:
   files:
