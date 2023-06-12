@@ -28,19 +28,19 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::unguard();
 
-        Context::initialize(
-            'SHOPIFY_API_KEY',
-            'SHOPIFY_API_SECRET',
-            'SHOPIFY_APP_SCOPES',
-            "https://wb-store.ferasdev.com",
-            new FileSessionStorage('/tmp/php_sessions'),
-            '2023-04',
-            true,
-            false,
-            null,
-            "",
-            null,
-            ["ferasdev.com"]
-        );
+//        Context::initialize(
+//            'SHOPIFY_API_KEY',
+//            'SHOPIFY_API_SECRET',
+//            'SHOPIFY_APP_SCOPES',
+//            "https://wb-store.ferasdev.com",
+//            new FileSessionStorage('/tmp/php_sessions'),
+//            '2023-04',
+//            true,
+//            false,
+//            null,
+//            "",
+//            null,
+//            ["ferasdev.com"]
+//        );
     }
 }
