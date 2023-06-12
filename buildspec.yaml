@@ -9,7 +9,7 @@ phases:
     commands:
       - apt-get update -y
       - apt-get install -y libpq-dev libzip-dev
-      -  apt-get install php-mysql
+      -  apt-get install -y php-mysql
       - curl -sS https://getcomposer.org/installer -o composer-setup.php
       - php composer-setup.php --install-dir=/usr/local/bin --filename=composer
   pre_build:
