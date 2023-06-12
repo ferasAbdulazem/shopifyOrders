@@ -51,7 +51,7 @@ return [
             'database' => env('RDS_DB_NAME', 'forge'),
             'username' => env('RDS_USERNAME', 'forge'),
             'password' => env('RDS_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
+            'unix_socket' => env('RDS_PASSWORD', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
